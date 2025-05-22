@@ -1,10 +1,11 @@
-import java.awt.*;
+package shapes;
+import turtleWorld.Turtle;
 
-public class Triangle extends Shape {
+public class Square extends Shape {
     private int width;
 //    private int height;
 
-    Triangle(Turtle turtle, int xPosition, int yPosition, String colorName, int borderWidth, int width) {
+    public Square(Turtle turtle, int xPosition, int yPosition, String colorName, int borderWidth, int width) {
         super(turtle, xPosition, yPosition, colorName, borderWidth);
         this.width = width;
 //        this.height = height;
@@ -15,13 +16,16 @@ public class Triangle extends Shape {
         super.draw();
 
         turtle.forward(width);
-        turtle.turnRight(120);
+        turtle.turnRight(90);
 
         turtle.forward(width);
-        turtle.turnRight(120);
+        turtle.turnRight(90);
 
         turtle.forward(width);
-        turtle.turnRight(120);
+        turtle.turnRight(90);
+
+        turtle.forward(width);
+        turtle.turnRight(90);
 
     }
 }

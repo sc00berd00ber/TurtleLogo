@@ -1,3 +1,7 @@
+package shapes;
+
+import turtleWorld.Turtle;
+
 import java.awt.*;
 
 public class Xshape extends Shape {

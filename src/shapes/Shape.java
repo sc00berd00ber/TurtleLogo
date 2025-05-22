@@ -1,6 +1,10 @@
+package shapes;
+
+import turtleWorld.Turtle;
+
 import java.awt.*;
 
-abstract class Shape implements IDrawable {
+public abstract class Shape implements IDrawable {
 
     //  turtle: the turtle that is used to paint the shape
     protected Turtle turtle;

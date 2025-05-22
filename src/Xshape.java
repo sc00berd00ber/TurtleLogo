@@ -12,10 +12,7 @@ public class Xshape extends Shape {
 
     @Override
     public void draw() {
-        turtle.penUp();
-        turtle.goTo(xPosition, yPosition);
-        turtle.penDown();
-        turtle.setPenWidth(borderWidth);
+        super.draw();
 
         int width = 200;
         int height = 200;
